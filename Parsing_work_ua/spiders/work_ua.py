@@ -32,6 +32,13 @@ class WorkUaKharkivSpider(scrapy.Spider):
         yield response.follow(card_details_uri, self.parse_details, meta={
                 'result': result})
 
+        for page in response.css('ul.pagination li'):
+            if page.css('a::text').get() == 'Наступна':
+                yield response.follow(
+                    page.css('a::attr(href)').get(),
+                    self.parse
+                )
+
 
     def parse_details(self, response):
         """

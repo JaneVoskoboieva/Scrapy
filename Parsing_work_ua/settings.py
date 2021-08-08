@@ -1,4 +1,4 @@
-# Scrapy settings for Parsing project
+# Scrapy settings for Parsing_work_ua project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'work_ua.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'Parsing (+http://www.yourdomain.com)'
+#USER_AGENT = 'Parsing_work_ua (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ DOWNLOAD_DELAY = 3
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'Parsing.middlewares.ParsingSpiderMiddleware': 543,
+#    'Parsing_work_ua.middlewares.ParsingSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'Parsing.middlewares.ParsingDownloaderMiddleware': 543,
+#    'Parsing_work_ua.middlewares.ParsingDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ DOWNLOAD_DELAY = 3
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'Parsing.pipelines.ParsingPipeline': 300,
+#    'Parsing_work_ua.pipelines.ParsingPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
